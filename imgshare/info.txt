@@ -1,0 +1,2 @@
+Este proyecto se basa en el proyecto Nodejs y MongoDB Red Social, Proyecto desde Cero del canal de Fazt
+link: https://www.youtube.com/watch?v=TqC3e8nBycg&list=PLL0TiOXBeDahTsuVTKGV8SLG4XiCGnstS&index=4
