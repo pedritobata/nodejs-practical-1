@@ -145,4 +145,45 @@ const getSecret = (function getClientSecret(){
 
 c('Secret', getSecret());
 
+// Parametro arguments
+
+function concatStrings(separator){
+  let result = '';
+  let i;
+  for(i = 0; i < arguments.length; i++){
+    result += arguments[i] + ' / ';
+  }
+  return result;
+}
+
+c('Concatenar', concatStrings('/', 'Perico', 'Los Palotes', 'Ya pes', 'Dejame surgir!!'));
+
+// Parametros predeterminados y rest
+
+function getStudentData(schoolName = 'Recoleta', ...restStudentData){
+  return restStudentData.reduce((acc, current) => {
+    acc += ' / ' + current;
+    return acc;
+  }, schoolName);
+}
+
+c('Student', getStudentData(undefined, 'Pedro' ,'Martinez', 'Goyoneche'))
+
+// This en function definition
+function Person(){
+  'use strict';
+  this.age = 45;
+  const self = this;
+
+  setTimeout(function (){
+    c('My age:', self.age);
+  } , 1000);
+}
+
+const p = new Person();
+
+// Global functions
+const uri = 'http://127.0.0.1:5500/javascript for everybody/mdn/index.html'
+c('Encode URI', encodeURI(uri) )
+c('Decode URI', decodeURI(uri) )
 
