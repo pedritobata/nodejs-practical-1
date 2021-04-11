@@ -1,0 +1,12 @@
+
+.ex1 {
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+}
+
+.ex1 button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
