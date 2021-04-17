@@ -10,3 +10,21 @@
     top: 10px;
     left: 10px;
 }
+
+.ex2 p{
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.ex3 {
+    background-color: rgb(163, 198, 221);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.brick {
+    flex: 33%;
+}
